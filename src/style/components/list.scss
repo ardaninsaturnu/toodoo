@@ -1,0 +1,24 @@
+@import "../main.scss";
+
+.list-item-container {
+  display: grid;
+  gap: 8px;
+  margin-top: 32px;
+
+  .list-item {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: $dark-text;
+    justify-content: space-between;
+    padding: 16px 22px;
+    border-radius: 12px;
+    border: solid $second-color 0.2px;
+
+    .list-item-title {
+      color: $light-text;
+    }
+  }
+}
+
+

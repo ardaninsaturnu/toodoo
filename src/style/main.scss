@@ -1,6 +1,6 @@
 // Define variables
 $main-color: #c01515;
-$second-color: rgb(100, 94, 94);
+$second-color: rgb(182, 182, 182);
 $light-text: #f8f1f1;
 $dark-text: #500309;
 $main-font: 'Open Sans', sans-serif;
@@ -37,6 +37,11 @@ body {
 
 h1, h2, h3 {
   font-family: $main-font;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -87,11 +92,13 @@ h1, h2, h3 {
     }
   }
 
-  input {
+  .form-input {
     width: 100%;
     border: none;
     padding: 8px;
     border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
   }
 }
 

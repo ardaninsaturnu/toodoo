@@ -1,4 +1,6 @@
 import AddTodoForm from "../addTodo";
+import ListItem from "../ListItem";
+import List from "../List";
 
 const Layout = () => {
   return(
@@ -7,6 +9,7 @@ const Layout = () => {
         TODO app for Vodafone development case
       </header>
       <AddTodoForm/>
+      <List/>
     </div>
   )
 }

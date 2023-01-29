@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.0.10",
     "cross-env": "^7.0.3",
     "env-cmd": "^10.1.0",
+    "feather-icons": "^4.29.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

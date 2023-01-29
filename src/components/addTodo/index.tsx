@@ -6,7 +6,7 @@ type PropTypes = {
 
 const AddTodoForm = ( { onSubmit } : PropTypes ) => {
   return(
-    <form onSubmit={ onSubmit }>
+    <form onSubmit={ onSubmit } className="form-container">
       <input type="text"/>
       <Button text="Add" type="submit" />
     </form>

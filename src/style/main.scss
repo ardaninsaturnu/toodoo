@@ -1,6 +1,8 @@
 // Define variables
-$main-color: #00bfff;
-$second-color: #0c474d;
+$main-color: #c01515;
+$second-color: rgb(100, 94, 94);
+$light-text: #f8f1f1;
+$dark-text: #500309;
 $main-font: 'Open Sans', sans-serif;
 $font-size-base: 16px;
 
@@ -30,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $main-color;
 }
 
 h1, h2, h3 {
@@ -37,6 +40,7 @@ h1, h2, h3 {
 }
 
 .container {
+
   @include mobile {
     width: 100%;
     padding: 0;
@@ -48,19 +52,46 @@ h1, h2, h3 {
   @include desktop {
     width: 60%;
     min-height: 200px;
-    background-color: crimson;
     padding: 0 40px;
     margin: 0 auto;
   }
-}
 
-.button {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: $main-color;
-  color: white;
-  text-decoration: none;
-  &:hover {
-    background-color: darken($main-color, 10%);
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    color: $light-text;
+    font-size: 24px;
   }
 }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: $dark-text;
+    color: white;
+    text-decoration: none;
+    width: 160px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($main-color, 10%);
+    }
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+}
+

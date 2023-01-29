@@ -1,0 +1,63 @@
+// Define variables
+$main-color: #00bfff;
+$second-color: #0c474d;
+$main-font: 'Open Sans', sans-serif;
+$font-size-base: 16px;
+
+// Define mixins for responsive design
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Use variables and mixins in styles
+body {
+  font-family: $main-font;
+  font-size: $font-size-base;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: $main-font;
+}
+
+.container {
+  @include mobile {
+    width: 100%;
+    padding: 0;
+  }
+  @include tablet {
+    width: 80%;
+    padding: 0 20px;
+  }
+  @include desktop {
+    width: 60%;
+    padding: 0 40px;
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $main-color;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}

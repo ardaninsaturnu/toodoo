@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="conflict solved.">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
+    <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config/dev.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pre-prod.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/production.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/test.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +42,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="test" />
-                    <option name="lastUsedInstant" value="1674978673" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1674979335" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1674978672" />
+                    <option name="branchName" value="test" />
+                    <option name="lastUsedInstant" value="1674978673" />
                   </RecentBranch>
                 </list>
               </option>
@@ -58,24 +58,75 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KzbWIUs2ptPd2Iy2GMLCBLvNEA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
-    "ts.external.directory.path": "/Users/ardaninsaturnu/station/github-project/todo-rere-mock/node_modules/typescript/lib"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/ardaninsaturnu/station/github-project/todo-rere-mock/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "DotEnv"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start:test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="" />
+      <created>1674980392682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674980392682</updated>
+      <workItem from="1674980397968" duration="437000" />
+      <workItem from="1674980846833" duration="3227000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -87,5 +138,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,7 +1,12 @@
+import AddTodoForm from "../addTodo";
+
 const Layout = () => {
   return(
     <div className="container">
-      <button className="button">Alex</button>
+      <header>
+        TODO app for Vodafone development case
+      </header>
+      <AddTodoForm/>
     </div>
   )
 }

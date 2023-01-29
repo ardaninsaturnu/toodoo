@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/dev.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pre-prod.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/production.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/test.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.production" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atoms/button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/addTodo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
       <list>
         <option value="SCSS File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -121,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674980392682</updated>
       <workItem from="1674980397968" duration="437000" />
-      <workItem from="1674980846833" duration="3227000" />
+      <workItem from="1674980846833" duration="6841000" />
     </task>
     <servers />
   </component>

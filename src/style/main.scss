@@ -47,7 +47,10 @@ h1, h2, h3 {
   }
   @include desktop {
     width: 60%;
+    min-height: 200px;
+    background-color: crimson;
     padding: 0 40px;
+    margin: 0 auto;
   }
 }
 

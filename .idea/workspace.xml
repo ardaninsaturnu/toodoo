@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AddToDoForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddToDoForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/constant.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/methods.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/atoms/input.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/atoms/input.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/components/list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/components/list.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,28 +62,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/ardaninsaturnu/station/github-project/todo-rere-mock/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "ts.external.directory.path": "/Users/ardaninsaturnu/station/github-project/todo-rere-mock/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;DotEnv&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "DotEnv"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config" />
@@ -133,7 +134,8 @@
       <workItem from="1674980397968" duration="437000" />
       <workItem from="1674980846833" duration="6984000" />
       <workItem from="1675010232753" duration="5184000" />
-      <workItem from="1675050457215" duration="5393000" />
+      <workItem from="1675050457215" duration="6245000" />
+      <workItem from="1675096835698" duration="2741000" />
     </task>
     <servers />
   </component>

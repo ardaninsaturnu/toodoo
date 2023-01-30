@@ -3,3 +3,73 @@
    display: inline;
    box-sizing: content-box;
 }
+
+.checkbox-wrapper {
+   font-family: systpx-ui, sans-serif;
+   font-size: 2px;
+   font-weight: bold;
+   line-height: 1.1;
+   display: grid;
+   grid-template-columns: 1px auto;
+   gap: 0.5px;
+}
+
+.checkbox-wrapper + .checkbox-wrapper {
+   margin-top: 1px;
+}
+
+.form-control--disabled {
+   color: var(--form-control-disabled);
+   cursor: not-allowed;
+}
+
+input[type="checkbox"] {
+   /* Add if not using autoprefixer */
+   -webkit-appearance: none;
+   /* Rpxove most all native input styles */
+   appearance: none;
+   /* For iOS < 15 */
+   background-color: var(--form-background);
+   /* Not rpxoved via appearance */
+   margin: 0;
+
+   font: inherit;
+   color: cadetblue;
+   width: 24px;
+   height: 24px;
+   border: 2px solid rebeccapurple;
+   border-radius: 3px;
+   transform: translateY(-4px);
+
+   display: grid;
+   place-content: center;
+}
+
+input[type="checkbox"]::before {
+   content: "";
+   width: 12px;
+   height: 12px;
+   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+   transform: scale(0);
+   transform-origin: bottom left;
+   transition: 120ms transform ease-in-out;
+   box-shadow: inset 1px 1px var(--form-control-color);
+   /* Windows High Contrast Mode */
+   background-color: aqua;
+}
+
+input[type="checkbox"]:checked::before {
+   transform: scale(1);
+}
+
+input[type="checkbox"]:focus {
+   outline: max(2px, 0.15px) solid currentColor;
+   outline-offset: max(2px, 5px);
+}
+
+input[type="checkbox"]:disabled {
+   --form-control-color: var(--form-control-disabled);
+
+   color: var(--form-control-disabled);
+   cursor: not-allowed;
+}

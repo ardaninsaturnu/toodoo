@@ -18,6 +18,13 @@
     .list-item-title {
       color: $light-text;
     }
+
+    .list-item-transitions {
+      display: flex;
+      width: 96px;
+      align-items: baseline;
+      justify-content: space-around;
+    }
   }
 }
 

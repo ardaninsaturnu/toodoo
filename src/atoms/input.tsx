@@ -25,7 +25,7 @@ const Input = (
   } : PropTypes ) => {
 
   return(
-    <label htmlFor={name} className="input-label">
+    <label htmlFor={name} className={`${ type === 'checkbox' ? 'checkbox-wrapper' : 'input-label' }`}>
       {label}
       {
         type === "select" ? (
@@ -36,6 +36,15 @@ const Input = (
             placeholder={ placeholder }>
             { children }
           </select>
+        ) : type === 'checkbox' ? (
+          <>
+            <input
+              className={ className }
+              type={ type }
+              name={ name }
+              checked= { checked }
+              placeholder={ placeholder }/>
+          </>
         ) : (
           <input
             className={ className }

@@ -1,0 +1,21 @@
+@import '../main';
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $dark-text;
+  color: white;
+  text-decoration: none;
+  width: 160px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}

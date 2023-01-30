@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atoms/input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/atoms/button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/atoms/input.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style/components/layout.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atoms/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/addTodo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/addTodo/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/addTodo/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddToDoForm/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +28,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -140,7 +142,7 @@
       <workItem from="1674980397968" duration="437000" />
       <workItem from="1674980846833" duration="6984000" />
       <workItem from="1675010232753" duration="5184000" />
-      <workItem from="1675050457215" duration="2334000" />
+      <workItem from="1675050457215" duration="4739000" />
     </task>
     <servers />
   </component>

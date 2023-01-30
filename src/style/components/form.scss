@@ -1,0 +1,18 @@
+@import "../main";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .form-input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    margin-right: 12px;
+  }
+}

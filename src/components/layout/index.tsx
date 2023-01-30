@@ -1,15 +1,15 @@
-import AddTodoForm from "../addTodo";
-import ListItem from "../ListItem";
-import List from "../List";
+import {ReactNode} from "react";
+import Header from "./Header";
 
-const Layout = () => {
+type PropTypes = {
+  children?: ReactNode;
+}
+
+const Layout = ( { children } : PropTypes ) => {
   return(
     <div className="container">
-      <header>
-        TODO app for Vodafone development case
-      </header>
-      <AddTodoForm/>
-      <List/>
+      <Header/>
+      { children }
     </div>
   )
 }

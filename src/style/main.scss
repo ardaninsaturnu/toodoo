@@ -86,6 +86,10 @@ h1, h2, h3 {
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
 
     &:hover {
       background-color: darken($main-color, 10%);
@@ -99,6 +103,7 @@ h1, h2, h3 {
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 12px;
+    margin-right: 12px;
   }
 }
 

@@ -1,9 +1,10 @@
 import Button from "../../atoms/button";
 import {SyntheticEvent} from "react";
+import {PlusCircle} from "react-feather";
 
 const onSubmit = ( e : SyntheticEvent ) => {
     e.preventDefault();
-    console.log( e );
+    console.log( e.target );
 }
 
 const AddTodoForm = () => {
@@ -18,7 +19,7 @@ const AddTodoForm = () => {
           <option value="3">just remember</option>
         </optgroup>
       </select>
-      <Button text="Add" type="submit" />
+      <Button text="Add" type="submit" icon={ <PlusCircle/> } />
     </form>
   )
 }

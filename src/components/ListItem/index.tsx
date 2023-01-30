@@ -1,3 +1,5 @@
+import {Trash2} from "react-feather";
+
 const ListItem = () => {
   return(
       <div className="list-item">
@@ -6,6 +8,7 @@ const ListItem = () => {
         </div>
         <div>
           <input type="checkbox"/>
+          <Trash2 color="white"/>
         </div>
       </div>
   )

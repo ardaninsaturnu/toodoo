@@ -1,8 +1,9 @@
 import Button from "../../atoms/button";
 import {SyntheticEvent} from "react";
 import {PlusCircle} from "react-feather";
-import '../../style/components/form.scss';
 import Input from "../../atoms/input";
+import {priorityOptions} from "../../utility/constant";
+import '../../style/components/form.scss';
 
 const onSubmit = ( e : SyntheticEvent ) => {
     e.preventDefault();
@@ -14,10 +15,12 @@ const AddTodoForm = () => {
     <form onSubmit={ onSubmit } className="form-container">
       <Input name="task" className="form-input" />
       <Input name="priority" type="select" className="form-input">
-        <option value="0">select</option>
-        <option value="1">emergency</option>
-        <option value="2">secondary</option>
-        <option value="3">just remember</option>
+        {
+          priorityOptions.map( ( priority, index ) => (
+            <option value={ priority.value } key={ index }>{ priority.label }</option>
+            )
+          )
+        }
       </Input>
       <Button text="Add" type="submit" icon={ <PlusCircle/> } />
     </form>

@@ -1,4 +1,4 @@
-import {ReactNode} from "react";
+import { ReactNode, SyntheticEvent } from "react";
 import '../style/atoms/input.scss';
 
 type PropTypes = {
@@ -10,6 +10,7 @@ type PropTypes = {
   className?: string
   value?: string
   checked?: boolean
+  onChange?: (e: SyntheticEvent) => void;
 }
 
 const Input = (
@@ -21,7 +22,8 @@ const Input = (
     children,
     className,
     value,
-    checked
+    checked,
+    onChange
   } : PropTypes ) => {
 
   return(
@@ -30,6 +32,7 @@ const Input = (
       {
         type === "select" ? (
           <select
+            onChange={onChange}
             className={ className }
             name={ name }
             value={ value }
@@ -39,6 +42,7 @@ const Input = (
         ) : type === 'checkbox' ? (
           <>
             <input
+              onChange={onChange}
               className={ className }
               type={ type }
               name={ name }
@@ -47,11 +51,11 @@ const Input = (
           </>
         ) : (
           <input
+            onChange={onChange}
             className={ className }
             type={ type }
             name={ name }
             value={value}
-            checked= { checked }
             placeholder={ placeholder }/>
         )
       }

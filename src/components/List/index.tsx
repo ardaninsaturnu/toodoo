@@ -2,22 +2,7 @@ import '../../style/components/list.scss';
 import ListItem from "../ListItem";
 import {useEffect, useState} from "react";
 import axios from "axios";
-
-type GetListResponse = {
-  data: ListObject[];
-  config: object;
-  headers: object;
-  request: object;
-  status: number;
-  statusText: string;
-};
-
-type ListObject = {
-  id: string;
-  task: string;
-  status: boolean;
-  priority: string;
-};
+import { GetListResponse,ListObject } from "../../utility/constant";
 
 const List = () => {
   const [ listData, setListData ] = useState<ListObject[]>([]);

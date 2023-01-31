@@ -1,13 +1,16 @@
 import {Trash2} from "react-feather";
 import Input from "../../atoms/input";
+import {useAppDispatch} from "../../store";
+import {removeTodo} from "../../store/slices/todoSlice";
 
 type PropTypes = {
   task: string,
-  status?: boolean
-
+  status?: boolean,
+  id: number
 }
 
-const ListItem = ({ task, status } : PropTypes ) => {
+const ListItem = ({ task, status, id } : PropTypes ) => {
+  const dispatch = useAppDispatch()
 
   return(
     <div className="list-item">
@@ -16,7 +19,7 @@ const ListItem = ({ task, status } : PropTypes ) => {
         <p className="list-item-title">{ task }</p>
       </div>
       <div className="list-item-transitions">
-        <Trash2 color={ status ? `grey` : 'red' } style={{ width: 36 }}/>
+        <Trash2 onClick={() => dispatch(removeTodo( id ))} color={ status ? `grey` : 'red' } style={{ width: 36 }}/>
       </div>
     </div>
   )

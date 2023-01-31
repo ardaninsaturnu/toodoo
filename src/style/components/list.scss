@@ -19,11 +19,13 @@
       color: $light-text;
     }
 
-    .list-item-transitions {
+    .list-item-task {
       display: flex;
-      width: 96px;
-      align-items: baseline;
-      justify-content: space-around;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .list-item-transitions {
     }
   }
 }

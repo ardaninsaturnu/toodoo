@@ -5,42 +5,29 @@ import { PlusCircle } from "react-feather";
 import Input from "../../atoms/input";
 import {priorityOptions} from "../../utility/constant";
 import '../../style/components/form.scss';
-import axios from "axios";
+import {useAppDispatch, useAppSelector} from "../../store";
+import {addTodo} from "../../store/slices/todoSlice";
+import {ListObject} from "../../models/Todo";
 
 const AddTodoForm = () => {
-  const [ inputs, setInputs ] = useState({});
-  const [ loading, setLoading ] = useState( false );
+  const [ inputs, setInputs ] = useState<ListObject>({id: 0, priority: "", status: false, task: ""});
+  const dispatch = useAppDispatch();
+  const loading = useAppSelector( state => state.tasks.loading );
 
+  // submit event to add new todos
   const onSubmit = ( e : SyntheticEvent ) => {
     e.preventDefault();
-    setLoading(true );
 
     setInputs( inputs =>({
       ...inputs,
       status: false
     }))
 
-    axios({
-       method: 'post',
-       url: process.env.REACT_APP_API_URL + 'tasks-test',
-       data: inputs
-     })
-      .then( response => {
-          if( response.status !== 201 ) {
-            return;
-          }
-          alert( 'todo created successfully' );
-          setLoading(false);
-      })
-      .catch( e => {
-        alert(e);
-        setLoading(false);
-      })
-      .finally( () => {
-        setInputs({});
-      })
+    dispatch( addTodo( inputs ) );
+    setInputs({id: 0, priority: "", status: false, task: ""})
   }
 
+  // handleChange works to assign new state into input state
   const handleChange = ( e : SyntheticEvent  ) => {
     const input = e.target as HTMLInputElement;
     const name = input.name;
@@ -50,8 +37,8 @@ const AddTodoForm = () => {
 
   return(
     <form onSubmit={ onSubmit } className="form-container">
-      <Input name="task" className="form-input" onChange={handleChange} />
-      <Input name="priority" type="select" className="form-input" onChange={handleChange}>
+      <Input name="task" className="form-input" onChange={handleChange} value={inputs.task} required={true}/>
+      <Input name="priority" type="select" className="form-input" onChange={handleChange} value={inputs.priority} required={true}>
         {
           priorityOptions.map( ( priority, index ) => (
             <option value={ priority.label } key={ index }>{ priority.label }</option>

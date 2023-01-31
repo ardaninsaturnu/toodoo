@@ -11,6 +11,7 @@ type PropTypes = {
   value?: string
   checked?: boolean
   onChange?: (e: SyntheticEvent) => void;
+  required?: boolean
 }
 
 const Input = (
@@ -23,7 +24,8 @@ const Input = (
     className,
     value,
     checked,
-    onChange
+    onChange,
+    required
   } : PropTypes ) => {
 
   return(
@@ -36,6 +38,7 @@ const Input = (
             className={ className }
             name={ name }
             value={ value }
+            required={required}
             placeholder={ placeholder }>
             { children }
           </select>
@@ -47,6 +50,7 @@ const Input = (
               type={ type }
               name={ name }
               checked= { checked }
+              required={required}
               placeholder={ placeholder }/>
           </>
         ) : (
@@ -56,6 +60,7 @@ const Input = (
             type={ type }
             name={ name }
             value={value}
+            required={required}
             placeholder={ placeholder }/>
         )
       }

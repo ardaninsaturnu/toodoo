@@ -11,12 +11,12 @@ const ListItem = ({ task, status } : PropTypes ) => {
 
   return(
     <div className="list-item">
-      <div className="">
+      <div className="list-item-task">
+        <Input name="status" type="checkbox"/>
         <p className="list-item-title">{ task }</p>
       </div>
       <div className="list-item-transitions">
         <Trash2 color={ status ? `grey` : 'red' } style={{ width: 36 }}/>
-        <Input name="status" type="checkbox"/>
       </div>
     </div>
   )

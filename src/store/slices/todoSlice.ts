@@ -9,6 +9,12 @@ export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
 
 export const addTodo = createAsyncThunk('todos/addTodo', async (todo: ListObject) => {
   const response = await axios.post('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test', todo);
+
+  if(response.status !== 201){
+    alert('something went wrong')
+    return;
+  }
+
   return response.data;
 });
 

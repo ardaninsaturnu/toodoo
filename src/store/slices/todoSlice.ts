@@ -1,31 +1,25 @@
 import axios from 'axios';
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-interface Todo {
-  task: string;
-  priority: string;
-  id: number;
-  status: boolean;
-}
+import {ListObject,GetListResponse} from "../../models/Todo";
 
 export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
-  const response = await axios.get('https://63d59887dc3c55baf42a9acf.mockapi.io/api/todos');
+  const response = await axios.get<GetListResponse['data']>('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test');
   return response.data;
 });
 
-export const addTodo = createAsyncThunk('todos/addTodo', async (todo: Todo) => {
-  const response = await axios.post('https://63d59887dc3c55baf42a9acf.mockapi.io/api/todos', todo);
+export const addTodo = createAsyncThunk('todos/addTodo', async (todo: ListObject) => {
+  const response = await axios.post('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test', todo);
   return response.data;
 });
 
 export const removeTodo = createAsyncThunk('todos/removeTodo', async (id: number) => {
-  await axios.delete(`https://63d59887dc3c55baf42a9acf.mockapi.io/api/todos/${id}`);
+  await axios.delete(`https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test/${id}`);
   return id;
 });
 
 const todosSlice = createSlice({
   name: 'todos',
-  initialState: { todos: [] as Todo[], loading: false },
+  initialState: { todos: [] as ListObject[], loading: false },
   reducers: {
     setLoading: (state, action: PayloadAction<boolean>) => {
       state.loading = action.payload;

@@ -1,40 +1,33 @@
 import '../../style/components/list.scss';
 import ListItem from "../ListItem";
-import {useEffect, useState} from "react";
-import axios from "axios";
-import { GetListResponse,ListObject } from "../../utility/constant";
+import { useEffect } from "react";
+import {useAppDispatch, useAppSelector} from "../../store";
+import {fetchTodos} from "../../store/slices/todoSlice";
+import {Loader} from "react-feather";
 
 const List = () => {
-  const [ listData, setListData ] = useState<ListObject[]>([]);
-  //const [ status, setStatus ] = useState( false );
+  const dispatch = useAppDispatch();
+  const todoState = useAppSelector(state => state.tasks );
+  const {todos, loading} = todoState;
 
   useEffect(() => {
-    ( async () => {
-      try {
-        const res = await axios.get<GetListResponse['data']>(process.env.REACT_APP_API_URL + 'tasks-test');
-
-        if( res.status !== 200 ) return;
-
-        setListData( res.data )
-
-      } catch (e) {
-        alert(e)
-      }
-    })()
-
-  },[]);
+    dispatch( fetchTodos() )
+  },[ dispatch ]);
 
   return(
-    <div className="list-item-container">
-      {
-        listData?.map( ( item: ListObject, index : number ) => {
+    loading ? <Loader/> : (
+      <div className="list-item-container">
+        {
+          todos?.map( ( item, index) => {
             return(
               <ListItem task={item.task} key={index} />
             )
-        })
-      }
-    </div>
+          })
+        }
+      </div>
+    )
   )
 }
 
 export default List;
+

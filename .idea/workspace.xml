@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42cb9c65-b5d8-4053-b517-b702a1f7b6bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/Todo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/slices/todoSlice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/List/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/List/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/constant.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/constant.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/todoSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/todoSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +134,7 @@
       <workItem from="1674980846833" duration="6984000" />
       <workItem from="1675010232753" duration="5184000" />
       <workItem from="1675050457215" duration="6245000" />
-      <workItem from="1675096835698" duration="27994000" />
+      <workItem from="1675096835698" duration="30657000" />
     </task>
     <servers />
   </component>

@@ -41,7 +41,9 @@ Install the dependencies and devDependencies and start the npm.
 
 ```sh
 npm install
-npm start
+npm run start:dev
+npm run start:test
+npm run start:pre-prod
 ```
 
 ## View

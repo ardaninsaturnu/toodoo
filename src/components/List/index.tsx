@@ -20,7 +20,7 @@ const List = () => {
         {
           todos?.map( ( item, index) => {
             return(
-              <ListItem task={item.task} key={index} id={item.id} />
+              <ListItem task={item.task} key={index} id={item.id} checked={item.status} />
             )
           })
         }

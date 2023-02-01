@@ -19,6 +19,10 @@
       color: $light-text;
     }
 
+    .overLine {
+      text-decoration: line-through;
+    }
+
     .list-item-task {
       display: flex;
       width: 100%;

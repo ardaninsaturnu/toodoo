@@ -49,7 +49,7 @@ npm run start:pre-prod
 ## View
 
 to view project last version click this
-url : <a target="_blank" href="">for TooDoo follow this</a>
+url : <a target="_blank" href="https://toodoo-ecru.vercel.app/">for TooDoo follow this</a>
 
 ### Commits Explanation
 

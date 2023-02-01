@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import AddTodoForm from "../components/AddToDoForm";
 import List from "../components/List";
 

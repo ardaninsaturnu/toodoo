@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import {ListObject,GetListResponse} from "../../models/Todo";
+import {config} from "../../utility/config";
 
 export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
   const response = await axios.get<GetListResponse['data']>('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test');
@@ -8,7 +9,7 @@ export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
 });
 
 export const addTodo = createAsyncThunk('todos/addTodo', async (todo: ListObject) => {
-  const response = await axios.post('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test', todo);
+  const response = await axios.post( config.apiUrl, todo );
 
   if(response.status !== 201){
     alert('something went wrong')
@@ -19,7 +20,7 @@ export const addTodo = createAsyncThunk('todos/addTodo', async (todo: ListObject
 });
 
 export const removeTodo = createAsyncThunk('todos/removeTodo', async (id: number) => {
-  await axios.delete(`https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test/${id}`);
+  await axios.delete(`${ config.apiUrl }/${id}`);
   return id;
 });
 
@@ -27,7 +28,7 @@ export const removeTodo = createAsyncThunk('todos/removeTodo', async (id: number
 export const updateTodo = createAsyncThunk('todos/updateTodo', async (
   { id, status }: { id: number, status: boolean }
 ) => {
-  await axios.put(`https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test/${id}`, { status });
+  await axios.put(`${ config.apiUrl }/${id}`, { status });
   return { id, status };
 });
 

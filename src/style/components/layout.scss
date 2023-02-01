@@ -2,12 +2,14 @@
 
 .container {
   @include mobile {
-    width: 100%;
+    width: 95%;
     padding: 0;
+    margin: 0 auto;
   }
   @include tablet {
     width: 80%;
     padding: 0 20px;
+    margin: 0 auto;
   }
   @include desktop {
     width: 60%;
@@ -22,5 +24,9 @@
     padding: 2rem 0;
     color: $light-text;
     font-size: 24px;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

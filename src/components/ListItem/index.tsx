@@ -1,4 +1,4 @@
-import React, {SyntheticEvent, useEffect, useState} from "react";
+import React, {SyntheticEvent} from "react";
 import {Trash2} from "react-feather";
 import Input from "../../atoms/input";
 import {useAppDispatch} from "../../store";

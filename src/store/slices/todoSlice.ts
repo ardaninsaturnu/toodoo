@@ -4,7 +4,7 @@ import {ListObject,GetListResponse} from "../../models/Todo";
 import {config} from "../../utility/config";
 
 export const fetchTodos = createAsyncThunk('todos/fetchTodos', async () => {
-  const response = await axios.get<GetListResponse['data']>('https://63d59887dc3c55baf42a9acf.mockapi.io/api/tasks-test');
+  const response = await axios.get<GetListResponse['data']>( config.apiUrl );
   return response.data;
 });
 

@@ -6,7 +6,7 @@ import Input from "../../atoms/input";
 import {priorityOptions} from "../../utility/constant";
 import '../../style/components/form.scss';
 import {useAppDispatch, useAppSelector} from "../../store";
-import {addTodo} from "../../store/slices/todoSlice";
+import {addTodo, setLoading} from "../../store/slices/todoSlice";
 import {ListObject} from "../../models/Todo";
 
 const AddTodoForm = () => {
@@ -16,15 +16,19 @@ const AddTodoForm = () => {
 
   // submit event to add new todos
   const onSubmit = ( e : SyntheticEvent ) => {
+    setLoading(true );
     e.preventDefault();
 
+    console.log( inputs )
     setInputs( inputs =>({
       ...inputs,
-      status: false
+      status: false,
+      priority: inputs.priority === '' ? 'Primary' : inputs.priority
     }))
 
     dispatch( addTodo( inputs ) );
     setInputs({id: 0, priority: "", status: false, task: ""})
+    setLoading(false)
   }
 
   // handleChange works to assign new state into input state

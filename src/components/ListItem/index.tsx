@@ -7,10 +7,11 @@ import {removeTodo,updateTodo } from "../../store/slices/todoSlice";
 type PropTypes = {
   task: string,
   id: number,
-  completed: boolean
+  completed: boolean,
+  priority: string
 }
 
-const ListItem = ({ task, id, completed } : PropTypes ) => {
+const ListItem = ({ task, id, completed, priority } : PropTypes ) => {
   const dispatch = useAppDispatch();
 
   const handleChange = ( e: SyntheticEvent) => {
@@ -22,10 +23,11 @@ const ListItem = ({ task, id, completed } : PropTypes ) => {
   return(
     <div className="list-item">
       <div className="list-item-task">
-        <Input name="status" type="checkbox" onChange={handleChange} checked={completed}/>
+        <Input name="status" type="checkbox" onChange={handleChange} checked={ completed }/>
         <p className={`list-item-title ${ completed && 'overLine' }`}>{ task }</p>
       </div>
       <div className="list-item-transitions">
+        <span className={`priority-pin ${priority.toLowerCase()}`}>{ priority }</span>
         <Trash2 onClick={() => !completed && dispatch(removeTodo( id ))} color={ completed ? `grey` : 'red' } style={{ width: 36 }}/>
       </div>
     </div>

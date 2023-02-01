@@ -23,6 +23,25 @@
       text-decoration: line-through;
     }
 
+    .priority-pin {
+      color: white;
+      border-radius: 12px;
+      font-size: 8px;
+      padding: 6px;
+    }
+
+    .primary {
+      background-color: crimson;
+    }
+
+    .secondary {
+      background-color: #217175;
+    }
+
+    .tertiary {
+      background-color: #b9592f;
+    }
+
     .list-item-task {
       display: flex;
       width: 100%;
@@ -30,6 +49,8 @@
     }
 
     .list-item-transitions {
+      display: flex;
+      align-items: end;
     }
   }
 }

@@ -10,7 +10,7 @@ import {addTodo, setLoading} from "../../store/slices/todoSlice";
 import {ListObject} from "../../models/Todo";
 
 const AddTodoForm = () => {
-  const [ inputs, setInputs ] = useState<ListObject>({id: 0, priority: "", status: false, task: ""});
+  const [ inputs, setInputs ] = useState<ListObject>({id: 0, priority: '', status: false, task: ""});
   const dispatch = useAppDispatch();
   const loading = useAppSelector( state => state.tasks.loading );
 
@@ -18,12 +18,12 @@ const AddTodoForm = () => {
   const onSubmit = ( e : SyntheticEvent ) => {
     setLoading(true );
     e.preventDefault();
+    const priority = inputs.priority === '' ? priorityOptions[1].label : inputs.priority;
 
-    console.log( inputs )
     setInputs( inputs =>({
       ...inputs,
       status: false,
-      priority: inputs.priority === '' ? 'Primary' : inputs.priority
+      priority
     }))
 
     dispatch( addTodo( inputs ) );
